@@ -1,0 +1,97 @@
+# =====================================================
+#   IBottleXP Messages
+#   Author: MrReZik
+#   Поддерживает &#rrggbb и &коды цветов
+# =====================================================
+
+# Префикс плагина (используется в %prefix%)
+prefix: "&#00FFFFIBottleXP &8» &f"
+
+# ============================
+#   Общие сообщения
+# ============================
+no-permission: "%prefix%&#FF4444У вас нет прав на выполнение этой команды!"
+player-only: "%prefix%&#FF4444Эта команда доступна только для игроков!"
+unknown-command: "%prefix%&#FF4444Неизвестная команда! Используйте &e/ibottlexp help"
+
+# ============================
+#   Reload
+# ============================
+reload-success: "%prefix%&#00FF00Конфигурация успешно перезагружена!"
+reload-failed: "%prefix%&#FF4444Ошибка при перезагрузке конфигурации! Проверьте консоль."
+
+# ============================
+#   Использование бутылочки
+# ============================
+# %bottle% - название бутылочки, %levels% - количество уровней, %player% - ник игрока
+bottle-used: "%prefix%&#FFFFFFВы использовали %bottle% &fи получили &#00FF00+%levels% &fуровней опыта!"
+bottle-used-level-now: "%prefix%&#FFFFFFВаш текущий уровень: &#FFD700%level%"
+
+# Action bar сообщение при использовании (переопределяется в config.yml per-bottle)
+default-action-bar: "&#00FF00+%levels% уровней опыта!"
+
+# ============================
+#   Кулдаун
+# ============================
+# %time% - оставшееся время в секундах, %bottle% - название бутылочки
+cooldown-active: "%prefix%&#FF6600⏳ Подождите &#FFAA00%time% &fсекунд перед использованием %bottle%!"
+
+# ============================
+#   Команда /ibottlexp give
+# ============================
+# %player% - ник получателя, %bottle% - название бутылочки, %amount% - количество
+give-success-sender: "%prefix%&#00FF00Вы выдали &#FFFFFFx%amount% %bottle% &#00FF00игроку &#FFFF00%player%!"
+give-success-receiver: "%prefix%&#00FF00Вы получили &#FFFFFFx%amount% %bottle% &#00FF00от &#FFFF00%sender%!"
+give-player-not-found: "%prefix%&#FF4444Игрок &e%player% &cне найден или не в сети!"
+give-unknown-bottle: "%prefix%&#FF4444Неизвестная бутылочка: &e%bottle%!"
+give-invalid-amount: "%prefix%&#FF4444Количество должно быть от &e1 &cдо &e64!"
+give-usage: "%prefix%&#FFFFFFИспользование: &e/ibottlexp give <игрок> <бутылочка> [количество]"
+
+# ============================
+#   Команда /ibottlexp list
+# ============================
+list-header: "&#00FFFFСписок доступных бутылочек:"
+list-item: "  &#FFD700» &e%id% &8- %name% &#aaaaaa(%levels% уровней)"
+list-empty: "%prefix%&#FF4444Нет настроенных бутылочек в config.yml!"
+
+# ============================
+#   Команда /ibottlexp help
+# ============================
+help-header:
+  - ""
+  - "&#00FFFF╔══════════════════════════╗"
+  - "&#00FFFF║  &#FFFFFFIBottleXP &8by &#FFD700MrReZik  &#00FFFF║"
+  - "&#00FFFF╚══════════════════════════╝"
+
+help-commands:
+  - "&#00FFFF /ibottlexp help &#aaaaaa- Показать это меню"
+  - "&#00FFFF /ibottlexp reload &#aaaaaa- Перезагрузить конфиг"
+  - "&#00FFFF /ibottlexp give <игрок> <бутылка> [кол-во] &#aaaaaa- Выдать бутылочку"
+  - "&#00FFFF /ibottlexp list &#aaaaaa- Список бутылочек"
+  - "&#00FFFF /ibottlexp info <бутылка> &#aaaaaa- Информация о бутылочке"
+
+help-footer:
+  - "&#aaaaaa━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+  - ""
+
+# ============================
+#   Команда /ibottlexp info
+# ============================
+info-header: "&#00FFFFИнформация о бутылочке &e%id%&8:"
+info-name: "  &#aaaaaa Название: %name%"
+info-levels: "  &#aaaaaa Уровней XP: &#00FF00%levels%"
+info-cooldown: "  &#aaaaaa Кулдаун: &#FFAA00%cooldown% сек."
+info-no-cooldown: "  &#aaaaaa Кулдаун: &#00FF00нет"
+info-unknown: "%prefix%&#FF4444Бутылочка &e%id% &cне найдена!"
+
+# ============================
+#   Anti-abuse
+# ============================
+anti-abuse-warning: "&#FF4444[IBottleXP] Подозрительное использование бутылочек: &e%player% &c(%count% раз за секунду)"
+
+# ============================
+#   Статистика
+# ============================
+stats-header: "&#00FFFFВаша статистика XP:"
+stats-total-levels: "  &#aaaaaa Получено уровней: &#00FF00%total%"
+stats-bottles-used: "  &#aaaaaa Использовано бутылочек: &#FFD700%count%"

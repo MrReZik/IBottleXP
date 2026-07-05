@@ -1,0 +1,29 @@
+name: IBottleXP
+version: '${project.version}'
+main: me.mrrezik.ibottlexp.IBottleXP
+api-version: '1.21'
+authors: [MrReZik]
+description: Experience bottle plugin with custom bottle configurations
+
+commands:
+  ibottlexp:
+    description: Main IBottleXP command
+    usage: /ibottlexp <help|reload|give|list|info|stats>
+    aliases: [ixp, bottlexp]
+
+permissions:
+  ibottlexp.use:
+    description: Allows using XP bottles
+    default: true
+  ibottlexp.reload:
+    description: Allows reloading the plugin
+    default: op
+  ibottlexp.give:
+    description: Allows giving bottles to players
+    default: op
+  ibottlexp.admin:
+    description: Full admin access to all commands
+    default: op
+    children:
+      ibottlexp.reload: true
+      ibottlexp.give: true
