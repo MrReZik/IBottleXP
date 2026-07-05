@@ -1,6 +1,4 @@
 # IBottleXP
-[![SpigotMC Downloads](https://img.shields.io/spiget/downloads/000000?label=SpigotMC%20Downloads&logo=spigotmc&color=orange)](https://www.spigotmc.org/)
-[![SpigotMC Version](https://img.shields.io/spiget/version/000000?label=SpigotMC%20Version&logo=spigotmc)](https://www.spigotmc.org/)
 [![Tested Versions](https://img.shields.io/badge/Tested%20Versions-1.21.4-brightgreen)](https://www.spigotmc.org/)
 [![MIT License](https://img.shields.io/badge/License-MIT-blue)](LICENSE)
 
@@ -9,7 +7,7 @@ A lightweight and fully configurable experience bottle plugin with hex color sup
 **Links:**
 - [SpigotMC (Download)](https://www.spigotmc.org/)
 - [Wiki (Documentation)](../../wiki)
-- [Discord (Support)](https://discord.gg/)
+- [Discord (Support)](https://dsc.gg/rezikdev)
 
 ---
 
